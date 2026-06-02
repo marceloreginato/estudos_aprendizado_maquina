@@ -5,8 +5,8 @@ Na regressão, vamos aproximar pontos por uma reta.
 ## Regressão Linear Univariada
 ![Gráfico regressão](../imagens/grafico_regressao.png)
 
-A regressão linear univariada é uma técnica de aprendizado supervisionado utilizada para prever um valor numérico de saída (Y) a partir de uma única variável de entrada (X). O termo univariada indica justamente que existe apenas uma variável sendo usada para fazer a previsão.
-No gráfico, os pontos azuis representam os exemplos conhecidos da base de dados, formados por pares de entrada e saída, como $X = 0,2$ associado a $Y = 3,0$. A linha vermelha representa a reta que melhor aproxima o comportamento geral desses pontos.
+A regressão linear univariada é uma técnica de aprendizado supervisionado utilizada para prever um valor numérico de saída (y) a partir de uma única variável de entrada (x). O termo univariada indica justamente que existe apenas uma variável sendo usada para fazer a previsão.
+No gráfico, os pontos azuis representam os exemplos conhecidos da base de dados, formados por pares de entrada e saída, como $x = 0,2$ associado a $y = 3,0$. A linha vermelha representa a reta que melhor aproxima o comportamento geral desses pontos.
 Essa reta é descrita pela equação:
 
 $$
@@ -17,9 +17,9 @@ $$
 ERRO = y_i - \hat{y_i}
 $$
 
-Nessa equação, $W$ representa a inclinação da reta, indicando quanto o valor de $Y$ tende a mudar quando $X$ aumenta. Já $B$ representa o ponto em que a reta intercepta o eixo $Y$, ou seja, o valor inicial previsto quando $X = 0$. 
+Nessa equação, $a$ representa a inclinação da reta, indicando quanto o valor de $y$ tende a mudar quando $x$ aumenta. Já $b$ representa o ponto em que a reta intercepta o eixo $y$, ou seja, o valor inicial previsto quando $x = 0$. 
 
-O **objetivo** do aprendizado é encontrar os valores adequados de $W$ e $B$ para que a reta produza previsões o mais próximas possível dos valores reais observados nos dados, ou seja, que **MINIMIZE** a soma do erro, mas normalmente se utiliza o erro quadrático. Depois de aprendida, essa relação pode ser usada para estimar $Y$ para novos valores de $X$.
+O **objetivo** do aprendizado é encontrar os valores adequados de $a$ e $b$ para que a reta produza previsões o mais próximas possível dos valores reais observados nos dados, ou seja, que **MINIMIZE** a soma do erro, mas normalmente se utiliza o erro quadrático. Depois de aprendida, essa relação pode ser usada para estimar $y$ para novos valores de $x$.
 
 Queremos minimizar isso:
 
