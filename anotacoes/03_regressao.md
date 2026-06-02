@@ -10,7 +10,7 @@ No gráfico, os pontos azuis representam os exemplos conhecidos da base de dados
 Essa reta é descrita pela equação:
 
 $$
-Y=W⋅X+B
+y=a⋅x+b
 $$
 
 $$
@@ -36,7 +36,7 @@ $$
 Substituindo, temos:
 
 $$
-\sum_{i=0}^{n-1} \left(y_i - (b + wx_i)\right)^2
+\sum_{i=0}^{n-1} \left(y_i - (b + ax_i)\right)^2
 $$
 
 Como queremos o mínimo erro dessa função, derivamos e igualamos a zero. 
@@ -44,14 +44,14 @@ Como queremos o mínimo erro dessa função, derivamos e igualamos a zero.
 $$
 \frac{\partial}{\partial \hat{b}}
 \sum_{i=1}^{n}
-\left(y_i - \left(\hat{b} + \hat{w}x_i\right)\right)^2
+\left(y_i - \left(b + ax_i\right)\right)^2
 = 0
 $$
 
 $$
-\frac{\partial}{\partial \hat{w}}
+\frac{\partial}{\partial \hat{a}}
 \sum_{i=1}^{n}
-\left(y_i - \left(\hat{b} + \hat{w}x_i\right)\right)^2
+\left(y_i - \left(b + ax_i\right)\right)^2
 = 0
 $$
 
@@ -216,7 +216,7 @@ clf.score(X, y)
 https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression
 
 
-## Regreção
+## Regressão
 As técnicas de Aprendizado de Máquina que fazem regressão são: 
 - MLPs
 - Árvores de Decisão
