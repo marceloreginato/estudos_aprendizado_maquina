@@ -42,14 +42,14 @@ $$
 Como queremos o mínimo erro dessa função, derivamos e igualamos a zero. 
 
 $$
-\frac{\partial}{\partial \hat{b}}
+\frac{\partial}{\partial b}
 \sum_{i=1}^{n}
 \left(y_i - \left(b + ax_i\right)\right)^2
 = 0
 $$
 
 $$
-\frac{\partial}{\partial \hat{a}}
+\frac{\partial}{\partial a}
 \sum_{i=1}^{n}
 \left(y_i - \left(b + ax_i\right)\right)^2
 = 0
